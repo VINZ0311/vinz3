@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.bg {
+    background-image: url('https://source.unsplash.com/1600x900/?nature');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #00b09b, #96c93d); /* Gradasi biru-hijau tosca */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.3em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+.tablink {
+    background-color: #00b09b; /* Warna dasar biru tosca */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tablink:hover {
+    background-color: #96c93d; /* Warna hijau tosca saat hover */
+    transform: scale(1.05);
+}
+
+.tabcontent {
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.photo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.skills li {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.skills li:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #00b09b, #96c93d); /* Gradasi biru-hijau tosca */
+    border-radius: 15px;
+    color: #fff; /* Warna teks putih untuk kontras */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

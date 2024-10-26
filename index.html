@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg"></div>
+    <header>
+        <h1>KEVIN ANTONIO</h1>
+        <p>Pemrogram web pemula</p>
+        <nav>
+            <button class="tablink" onclick="openTab(event, 'achievements')">Pencapaian</button>
+            <button class="tablink" onclick="openTab(event, 'skills')">Keterampilan</button>
+        </nav>
+    </header>
+    
+    <div id="achievements" class="tabcontent">
+        <h2>Pencapaian Saya</h2>
+        <div class="photo-cards">
+            <div class="card">
+                <img src="SERTI1.jpg" alt="Foto 1">
+                <h3>Belajar Dasar Pemograman Web</h3>
+                <p>SERTIFIKAT 1</p>
+            </div>
+            <div class="card">
+                <img src="SERTI2.jpg" alt="Foto 2">
+                <h3>Belajar Dasar Pemograman JavaScript</h3>
+                <p>SERTIFIKAT 2</p>
+            </div>
+            <div class="card">
+                <img src="SERTI3.jpg" alt="Foto 3">
+                <h3>Belajar Membuat Front-End Web Untuk Pemula</h3>
+                <p>SERTIFIKAT 3</p>
+            </div>
+            <div class="card">
+                <img src="serti4.jpg" alt="Foto 4">
+                <h3>Belajar Dasar AI</h3>
+                <p>SERTIFIKAT 4</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="tabcontent" style="display:none;">
+        <h2>Keterampilan</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </div>
+
+    <footer>
+        <h2>Kontak</h2>
+        <p>Email: contoh@email.com</p>
+        <p>Telepon: 0123-456-789</p>
+    </footer>
+    
+    <script src="vinz.js"></script>
+</body>
+</html>
